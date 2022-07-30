@@ -1,10 +1,10 @@
 {
-  "name": "@mesnmono/json-server",
+  "name": "@comgamequiz/json-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "json-server --watch ./index.js --port 9000", 
+    "dev": "json-server --watch ./index.js --port 3109", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -1,10 +1,10 @@
 {
-  "name": "@mesnmono/web",
+  "name": "@comgamequiz/web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3100",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
@@ -18,5 +18,8 @@
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "svelte-spa-router": "^3.2.0"
   }
 }

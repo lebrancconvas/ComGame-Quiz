@@ -1,14 +1,16 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@nrwl/nx-cloud': latest
   lerna: ^5.1.4
   nodemon: ^2.0.19
-  nx: latest
+  nx: 14.5.1
 
 devDependencies:
+  '@nrwl/nx-cloud': 14.2.0
   lerna: 5.1.8
   nodemon: 2.0.19
-  nx: 14.4.3
+  nx: 14.5.1
 
 packages:
 
@@ -958,20 +960,33 @@ packages:
       - supports-color
     dev: true
 
-  /@nrwl/cli/14.4.3:
-    resolution: {integrity: sha512-9WzOOXgdf9YJxqte5e8KNkM3NWOuBgM7hz9jEOyw53Ht1Y2H8xLDPVkqDTS9kROgcyMQxHIjIcw80wZNaZL8Mw==}
+  /@nrwl/cli/14.5.1:
+    resolution: {integrity: sha512-CWYAK5Oz/hZw82aeReKI0kPKKA0nCgtmf3fw4wVMNfTySW5Umt+08D5ZXG8xshtd4JODa4Lvvqtd7ig2mLh9sw==}
     dependencies:
-      nx: 14.4.3
+      nx: 14.5.1
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
     dev: true
 
-  /@nrwl/tao/14.4.3:
-    resolution: {integrity: sha512-sHlnqTlJ/XEc/lv0MIKYI1R643CWFvYL6QyZD7f38FvP1RblZ6eVqvOJcrkpwcvRWcZNEY+GrQpb1Io1ZvMEmQ==}
+  /@nrwl/nx-cloud/14.2.0:
+    resolution: {integrity: sha512-KnrNFDCII9mbLwFp0HgyKVlhMTXoN90CQzGgdtCNPPBP/Wg84pttcpynGdWyupkrBJxdqMNTJEC7HGib0ipxew==}
     hasBin: true
     dependencies:
-      nx: 14.4.3
+      axios: 0.21.4
+      chalk: 4.1.0
+      node-machine-id: 1.1.12
+      strip-json-comments: 3.1.1
+      tar: 6.1.11
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  /@nrwl/tao/14.5.1:
+    resolution: {integrity: sha512-7A35jJ89Y9W64wLsq1WZfduEIG9Iz1Alb8OWBXB9tpt4ZOuQw2o0LphbxpCPv039c5xQQGMtkD2owd3Xi73bvQ==}
+    hasBin: true
+    dependencies:
+      nx: 14.5.1
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
@@ -1257,6 +1272,14 @@ packages:
   /at-least-node/1.0.0:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
     engines: {node: '>= 4.0.0'}
+    dev: true
+
+  /axios/0.21.4:
+    resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
+    dependencies:
+      follow-redirects: 1.15.1
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   /balanced-match/1.0.2:
@@ -1972,6 +1995,16 @@ packages:
   /flat/5.0.2:
     resolution: {integrity: sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==}
     hasBin: true
+    dev: true
+
+  /follow-redirects/1.15.1:
+    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: true
 
   /fs-constants/1.0.0:
@@ -3055,6 +3088,10 @@ packages:
       - supports-color
     dev: true
 
+  /node-machine-id/1.1.12:
+    resolution: {integrity: sha512-QNABxbrPa3qEIfrE6GOJ7BYIuignnJw7iQ2YPbc3Nla1HzRJjXzZOiikfF8m7eAMfichLt3M4VgLOetqgDmgGQ==}
+    dev: true
+
   /nodemon/2.0.19:
     resolution: {integrity: sha512-4pv1f2bMDj0Eeg/MhGqxrtveeQ5/G/UVe9iO6uTZzjnRluSA4PVWf8CW99LUPwGB3eNIA7zUFoP77YuI7hOc0A==}
     engines: {node: '>=8.10.0'}
@@ -3260,8 +3297,8 @@ packages:
       set-blocking: 2.0.0
     dev: true
 
-  /nx/14.4.3:
-    resolution: {integrity: sha512-XPaoEAfJI9056qdwTvkutQSwwA3iihqNDwhvk3dmgpT35j8Uzm/y67goACaCUBCjP2dIQqXfNfJVWQIpcG3MTw==}
+  /nx/14.5.1:
+    resolution: {integrity: sha512-0QimStCyaw4HpgiJYpdH7NWMEVULKMcXEgPG/Mu3XDQtda/+8plDJ+ftfVo3MfjXIzQ6T7+zo//xESUez0pZ5w==}
     hasBin: true
     requiresBuild: true
     peerDependencies:
@@ -3273,8 +3310,8 @@ packages:
       '@swc/core':
         optional: true
     dependencies:
-      '@nrwl/cli': 14.4.3
-      '@nrwl/tao': 14.4.3
+      '@nrwl/cli': 14.5.1
+      '@nrwl/tao': 14.5.1
       '@parcel/watcher': 2.0.4
       chalk: 4.1.0
       chokidar: 3.5.3
@@ -4090,6 +4127,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       min-indent: 1.0.1
+    dev: true
+
+  /strip-json-comments/3.1.1:
+    resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
+    engines: {node: '>=8'}
     dev: true
 
   /strong-log-transformer/2.1.0:

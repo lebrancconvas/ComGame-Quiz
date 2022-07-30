@@ -6,9 +6,13 @@ specifiers:
   svelte: ^3.49.0
   svelte-check: ^2.8.0
   svelte-preprocess: ^4.10.7
+  svelte-spa-router: ^3.2.0
   tslib: ^2.4.0
   typescript: ^4.6.4
   vite: ^3.0.0
+
+dependencies:
+  svelte-spa-router: 3.2.0
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.1_svelte@3.49.0+vite@3.0.4
@@ -647,6 +651,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /regexparam/2.0.0:
+    resolution: {integrity: sha512-gJKwd2MVPWHAIFLsaYDZfyKzHNS4o7E/v8YmNf44vmeV2e4YfVoDToTOKTvE7ab68cRJ++kLuEXJBaEeJVt5ow==}
+    engines: {node: '>=8'}
+    dev: false
+
   /resolve-from/4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -821,6 +830,12 @@ packages:
       svelte: 3.49.0
       typescript: 4.7.4
     dev: true
+
+  /svelte-spa-router/3.2.0:
+    resolution: {integrity: sha512-igemo5Vs82TGBBw+DjWt6qKameXYzNs6aDXcTxou5XbEvOjiRcAM6MLkdVRCatn6u8r42dE99bt/br7T4qe/AQ==}
+    dependencies:
+      regexparam: 2.0.0
+    dev: false
 
   /svelte/3.49.0:
     resolution: {integrity: sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==}

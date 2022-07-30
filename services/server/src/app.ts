@@ -3,7 +3,7 @@ import router from './routes/router';
 
 const app = express();
 
-const PORT = 3002;
+const PORT = 3102;
 
 app.use(router);
 

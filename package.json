@@ -1,5 +1,5 @@
 {
-  "name": "mesnmono",
+  "name": "comgamequiz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "lerna": "^5.1.4",
     "nodemon": "^2.0.19",
-    "nx": "latest"
+    "nx": "14.5.1",
+    "@nrwl/nx-cloud": "latest"
   }
 }
